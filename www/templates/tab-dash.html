@@ -1,0 +1,20 @@
+<ion-view view-title="Dashboard" cache-view="false">
+  <ion-content class="padding">
+    <form ng-submit="registerNow()" novalidate>
+        <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Posição
+            </div>
+            <select ng-model="mapa.posicao">
+              <option ng-repeat="pos in posicao" ng-value="{{pos.tipo}}">{{pos.tipo}}</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit" class="button button-block button-calm">
+            Registrar hora
+        </button>
+    </form>
+  </ion-content>
+</ion-view>
